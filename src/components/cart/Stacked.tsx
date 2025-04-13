@@ -15,7 +15,7 @@ const BarChartAverageProduction = ({ isDark }: { isDark: boolean }) => {
 
     data.forEach((item) => {
       const crop = item['Crop Name'];
-      const production = parseFloat(item['Crop Production (UOM:t(Tonnes))']);
+      const production = parseFloat(String(item['Crop Production (UOM:t(Tonnes))']));
       if (!isNaN(production)) {
         if (!cropMap[crop]) {
           cropMap[crop] = { total: 0, count: 0 };
