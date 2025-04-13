@@ -37,3 +37,5 @@ This project is a frontend application built using **React**, **TypeScript**, **
 ```bash
 yarn install
 
+yarn run dev
+
